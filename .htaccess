@@ -1,0 +1,18 @@
+RewriteEngine on
+
+#domain/path.../api/service/output
+# rewrites to
+#domain/path.../api.php?service=service&output=output
+RewriteCond  %{REQUEST_FILENAME} !-f 
+RewriteCond  %{REQUEST_URI} ^(.*)/api/.*$
+RewriteRule ^api/(vali)/(json|xml)$ %1/api.php?service=$1&output=$2 [QSA,L]
+
+#domain/path.../page.html
+# rewrites to
+#domain/path.../index.php?vm=page etc
+RewriteCond  %{REQUEST_URI} ^(.*)/.*$
+RewriteRule ^([a-z\-]+)\.html$ %1/index.php?vm=$1 [QSA,L] 
+
+# rewrite old vali.xccomp.org to new domain
+RewriteCond %{HTTP_HOST} !^vali.fai-civl.org$ [NC]
+RewriteRule ^(.*)$ http://vali.fai-civl.org/$1 [L,R=301]

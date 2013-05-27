@@ -1,0 +1,74 @@
+body {
+  font-family: verdana,helvetic,sans-serif;
+  font-size: 11px;
+  margin: 0;
+}
+
+form {
+  margin: 50px 0 0 10px;
+}
+
+.vc-wait {
+  height: 16px;
+  width: 16px;
+  float: left;
+  margin: 2px 0pt 0pt 20px;
+  background: url(images/icon-wait-bw.gif) no-repeat scroll 0 0 transparent;
+  display: none;
+}
+
+.vc-container {
+  width: 500px;
+  height: auto;
+  background: #fff;
+}
+
+.vc-header {
+  color: #ddd;
+  padding: 3px 0 4px 24px;
+  font-size: 10px;
+  font-weight: bold;
+  background: url(images/logo16.png) no-repeat scroll 2px 2px #336699;
+}
+
+.vc-body {
+  height: 220px;
+  overflow: auto;
+  font-family: monospace;
+  font-size: 11px;
+  padding: 7px;
+  color: #fff;
+  background-color: #000;
+}
+
+.vc-data {
+  color: #e6e6e6;
+}
+
+.vc-back {
+  padding-top: 5px;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.vc-back a:link, .vc-back a:visited {
+  color: navy;
+}
+
+.vc-back a:hover {
+  color: red;
+}
+
+.vc-file {
+  width:90%;
+  font-size: 11px;
+  color:#336699;
+}
+
+.vc-input {
+  font-size: 11px;
+  float: left;
+  margin-right: 10px;
+}
+
+

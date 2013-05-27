@@ -1,0 +1,6 @@
+RewriteEngine on
+
+# try to rewrite old vali1 cgi-bin/vali.cgi
+RewriteCond  %{REQUEST_FILENAME} !-f 
+RewriteRule ^vali\.cgi$ vali-igc.cgi$1 [QSA,L]
+

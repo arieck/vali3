@@ -1,0 +1,652 @@
+body {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  margin: 10px;
+}
+
+a, a:visited 
+{
+  text-decoration: none;
+  color: #0085CF;
+}
+
+a:hover, a:active
+{
+  text-decoration: underline;
+  color: #0085CF;
+}
+
+p
+{
+  line-height: 130%;
+  color: #222;
+}
+
+#content {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#header {
+  margin-top: 25px;
+  margin-bottom: 35px;
+}
+
+#header-bar {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #204060;
+  padding: 10px 20px 10px 0;
+  position: relative;
+  height: 30px;
+}
+
+#fai-placer {
+  height: 1px;
+  width: 87px;
+  float: left;
+  margin-left: 125px;
+}
+
+#fai-image {
+  height: 98px;
+  width: 160px;
+  left: 25px;
+  top: -20px;
+  position: absolute;
+  background: url(images/fai-logo.png) no-repeat scroll 0px 0px transparent;
+}
+  
+#logo {
+  float: left;
+  background: url(images/logo16.png) no-repeat scroll 0pt 6px transparent;
+  padding-left: 22px;
+  color: #ccc;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+#logo a, #logo a:visited 
+{
+  text-decoration: none;
+  color: #ccc;
+}
+
+#logo a:hover, #logo a:active 
+{
+  text-decoration: none;
+  color: #eee;
+}
+
+#topMenu
+{
+  float: right;
+  font-size: 13px;
+  font-weight: normal;
+  color: #fff;
+  margin-top: 5px;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  background-color: transparent;
+}
+
+.topMenu a, .topMenu a:visited 
+{
+  font-weight: bold;
+  text-decoration: none;
+  color: #eee;
+}
+
+.topMenu a:hover, .topMenu a:active
+{
+  font-weight: bold;
+  text-decoration: underline;
+  color: #eee;
+}
+
+#userHeader
+{
+  font-size: 12px;
+  font-weight: bold;
+  color: #0085CF;
+  padding: 0 20px;
+  text-align: right;
+  margin-top: 5px;
+}
+
+.userStatus
+{
+  font-weight: normal;
+  color: #555;
+}
+
+
+#page-container
+{
+  margin: 0 25px;
+}
+
+#page-nav {
+  float: left;
+  margin: 50px 20px 0 1px;
+  width: 160px;
+}
+
+/*
+-----------------------------------------------------------------------------------
+temp info values
+-----------------------------------------------------------------------------------
+*/
+
+             
+.info-menu
+{
+width: 160px; /*width of menu*/
+}
+
+.info-menu ul
+{
+list-style-type: none;
+margin: 0;
+padding: 0;
+margin-bottom: 0; /*bottom spacing between each UL and rest of content*/
+}
+
+.info-menu ul li
+{
+font: normal 13px Arial;
+margin-bottom: 2px; /*bottom spacing between menu items*/
+}
+
+.info-menu ul li.active
+{
+display: block;
+padding: 3px 5px 3px 8px;
+line-height: 17px;    
+color: #666;
+font-weight: bold;
+background: #E5ECF9;
+background: #F5F5FF;
+text-decoration: none;
+
+}
+
+.info-menu ul li a
+{
+display: block;
+padding: 3px 5px 3px 8px;
+line-height: 17px;    
+color: #0085CF;
+text-decoration: none;
+/*background: #F5F5FF;
+text-decoration: none;
+-moz-border-radius: 4px;*/ 
+}
+
+.info-menu ul li a:visited
+{
+ color: #0085CF;
+ text-decoration: none;
+}
+
+.info-menu ul li a:hover
+{ 
+color: #0085CF;
+background: #F5F5F5;
+text-decoration: underline;
+}
+
+
+#page-content {
+  border-left: 1px solid #DBDBFF;
+  float: left;
+  padding-left: 15px;
+  width: 800px;
+  font-family: Georgia, serif;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 125%;
+  min-height: 400px;
+}
+
+#page-content h1 {
+  margin-top : 0;
+  font-size: 16px;
+}
+
+#page-content h2 {
+  font-size: 14px;
+}
+
+#page-content h3 {
+  font-size: 13px;
+  margin-bottom: 0;
+}
+
+#page-content p {
+  margin-top : 0;
+}
+
+.clear {
+  border:0 none transparent;
+  clear:both;
+  height:0;
+  padding:0;
+  width:0;
+}
+
+.container-centered {
+  margin: 50px auto;
+  width: 90%;
+}
+  
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hidden {
+  display: none;
+}
+
+.textarea {
+  width: 100%;
+  height: 200px;
+  border: 1px solid #ddd;
+}
+
+.sign-box {
+  opacity: 0.80;
+  width: auto;
+}
+
+.sign-box:hover  {
+  opacity: 1;
+}
+ 
+#cpa-box {
+  padding: 8px;
+  background-color: #eee;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+}
+
+.cpa-title {
+  font-size: 12px;
+  margin-bottom: 5px;
+  display: block;
+  /* width for ie7 */
+  width: 100%;
+}
+
+#cpa-image {
+  float: left;
+  border: 1px solid #ddd;
+  width: 90px;
+  height: 32px;
+}
+
+#cpa-inner {
+  float: left;
+  padding-left: 15px;
+}
+
+.cpa-input {
+  float: left;
+  margin: 0 15px 0 0;
+  width: 80px;
+  color: #333;
+  font-size: 12px;
+}
+
+#cpa-reload {
+  float: left;
+  background: transparent url("images/reload.png") no-repeat scroll top left;
+  height: 20px;
+  padding: 2px 0 0 24px;
+  width: 60px;
+  display: block;
+}
+
+a.cpa:link, a.cpa:visited, a.cpa:hover, a.cpa:active {
+  color: #A60808;
+  font-size: 11px;
+  text-decoration: underline;
+}
+
+#cpa-case {
+  clear: both;
+  font-size: 11px;
+  font-style: italic;
+}
+
+.iframe-form {
+  width: 100%;
+  height: 100%;
+  border: none;
+  overflow: hidden;
+}
+
+.noncompat {
+  margin-bottom: 20px;
+  background-color: #DE8B8B;
+  color: #FFFFFF;
+  border-radius: 5px 5px 5px 5px;
+  padding: 7px;
+  text-align: center;
+}
+
+.noncompat a:link, .noncompat a:visited,
+.noncompat a:active, .noncompat a:hover {
+font-weight: bold;
+color: #FFFFFF;
+text-decoration: underline;
+}
+
+
+#options {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  margin: 10px 0;
+}
+
+#options label {
+  margin-right : 20px;
+}
+  
+#multiContainer {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  background-color: #F5F5FF;
+  border: 1px solid #ccc;
+  padding: 5px 10px 10px 10px;
+  border-radius: 5px;
+  width: auto;
+  margin: 25px 0 40px !important;
+}
+
+#filesHeader {
+  background-color: #F5F5FF;
+  padding: 5px 0 10px 0;
+}
+
+#filesHeader span {
+  display: inline-block;
+  width: 20px;
+  padding-left: 3px;
+}
+
+#result-vali-passed {
+  background: transparent url(images/vali-passed.png) no-repeat scroll 2px 2px;
+}
+
+#result-vali-failed {
+  background: transparent url(images/vali-failed.png) no-repeat scroll 2px 2px;
+}
+
+#result-vali-error {
+  background: transparent url(images/vali-error.png) no-repeat scroll 2px 1px;
+}
+
+.header-item {
+  float: left;
+  padding: 1px 3px 1px 20px;
+  margin-right: 5px;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 3px;
+}
+
+#filesHeader select {
+  float: left;
+  font-size: 11px;
+  margin: 2px 15px 0 0;
+}
+
+#result-vali- {
+  background: transparent url(images/vali-checked.png) no-repeat scroll 2px 1px;
+}
+                  
+#filesHeader input[type="button"] {
+  font-size: 11px;
+  float: right;
+  margin-left: 10px;
+}
+
+.icon-wait-static {
+  background: transparent url(images/icon-wait-static.png) no-repeat scroll 4px 3px;
+  float: right;
+  width: 20px;
+  height: 20px;
+}
+
+.icon-wait {
+  background: transparent url(images/vali-active.gif) no-repeat scroll 4px 3px;
+  float: right;
+  width: 20px;
+  height: 20px;
+}
+
+#filesContainer {
+  background-color: #fff;
+  min-height: 200px;
+}
+
+#dropContainer {
+  padding: 10px;
+  display: none;
+}
+
+#dropInfo {
+  border: 1px dotted #BBBBBB;
+  color: #BBBBBB;
+  padding: 80px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.fileItem {
+  border-top: 1px solid #ddd;
+  padding: 5px;
+  background-color: #fff;
+  background-color: transparent;
+  cursor: default;
+}
+
+.fileItem:hover {
+  background-color: #F7FFF5;
+}
+
+.fileItemData {
+  border-top: 1px solid #ddd;
+  padding: 5px;
+  background-color: #fff;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.fileItemData:hover {
+  background-color: #F7FFF5;
+}
+
+.fileItemSelected {
+  border-top: 1px solid #ddd;
+  padding: 5px;
+  background-color: #FFFEDB;
+  cursor: pointer;
+}
+
+ 
+.filename {
+  font-size: 11px;
+  font-weight: bold;
+  float: left;
+  width: 45%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+  
+.filesize {
+  font-size: 11px;
+  float: left;
+  width: 10%;
+  text-align: right;
+}
+ 
+.filestatus {
+  font-size: 11px;
+  float: right;
+  width: 35%;
+  line-height: 120%;
+}
+
+.vali-none {
+  background: transparent url(images/vali-none.png) no-repeat scroll 0px 0px;
+  padding-left: 24px;
+  min-height: 16px;
+}
+
+.vali-active {
+  background: transparent url("images/vali-active.gif") no-repeat scroll top left;
+  padding-left: 24px;
+  min-height: 16px;
+}
+
+.vali-passed {
+  background: transparent url(images/vali-passed.png) no-repeat scroll 0px 0px;
+  padding-left: 24px;
+  min-height: 16px;
+}
+
+.vali-failed {
+  background: transparent url(images/vali-failed.png) no-repeat scroll 0px 0px;
+  padding-left: 24px;
+  min-height: 16px;
+}
+
+.vali-error {
+  background: transparent url(images/vali-error.png) no-repeat scroll 0px 0px;
+  padding-left: 24px;
+  min-height: 16px;
+}
+
+.toggle {
+  background: transparent url(images/toggle.png) no-repeat scroll 2px 0px;
+  width: 16px;
+  height: 12px;
+  float: right;
+}
+    
+.outputContainer {
+  display: none;
+  padding: 8px;
+}
+
+.output {
+  border: 10px solid #F7F7F7;
+}
+
+.output .tabs {
+  background-color: #F7F7F7;
+}
+
+.output .tabs ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0 15px;
+  font-weight: bold;
+  font-size: 11px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.output .tabs li {
+  border: none;
+  padding: 2px 7px;
+  background-color: transparent;
+  color: #000; 
+  cursor: pointer;
+  display: inline;
+}
+   
+.output .tabs li.active {
+  border: 1px solid #ccc;
+  background-color: #FEFEFF;
+  border-bottom-color: #FEFEFF;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  padding: 1px 6px;
+  cursor: default;
+}
+
+.output .tabs li.disabled {
+  color: #888; 
+  cursor: default;
+}
+
+.output .content {
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  line-height: 110%;
+  color: #000;
+  background-color: #FEFEFF;
+  min-height: 50px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.output table {
+  border: none;
+  border-collapse: collapse;
+  padding: 0;
+}
+
+.output td.label {
+  text-align: right;
+  font-weight: bold;
+  padding-right: 10px;
+}
+
+.output .vali-output {
+  font-family: monospace;
+}
+
+ table.softlist
+{
+    border-width: 0 0 1px 1px;
+    border-spacing: 0;
+    border-collapse: collapse;
+    border-style: solid;
+	border-color: #999;
+}
+
+.softlist td, .softlist th
+{
+    margin: 0;
+    padding: 2px;
+    border-width: 1px 1px 0 0;
+    border-style: solid;
+    border-color: #999;
+}
+
+hr
+{
+ background-color: #ccc;
+    border: 0 none;
+    color: #ccc;
+    height: 1px;
+}
+
+#md5{ font-family: "Courier New", Courier, monospace; }
+
+#editor1{ width:100%; }
