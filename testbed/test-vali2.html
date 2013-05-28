@@ -1,0 +1,27 @@
+<!DOCTYPE html> 
+<head>
+<meta charset="utf-8">
+<title>Test Open Validation Server v2</title>
+</head>
+ 
+<body style="font-family: verdana,helvetic,sans-serif;font-size: 11px;">
+ 
+<h2>Enter your IGC file to validate</h2>
+ 
+<!-- MAKE SURE THE ACTION VALUE POINTS TO YOUR SCRIPT -->   
+<form action="/cgi-bin/vali-igc.cgi" method="post" enctype="multipart/form-data" name="igcform">
+
+  <!-- FILE INPUT FIELD - MUST BE NAMED "igcfile" --> 
+  <input type="file" name="igcfile"  style="font-size:100%;"/>
+
+  <p>
+  &nbsp;  
+  </p>
+  
+  <p style="margin-top: 20px;">
+  <input type="submit" name="Submit" value="Validate" style="font-weight: bold;" />
+  </p>
+      
+</form>    
+</body>
+</html>

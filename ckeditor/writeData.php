@@ -10,7 +10,7 @@ if (!empty($_POST)) {
 	$referer = "index.php";
 	if(isset($_POST['referer'])) { $referer = $_POST['referer']; } else { $referer = "index.php"; }
 	if(isset($_POST['supported-software'])) { 
-		$file = "C:/wwwroot/app/engine/view/includes/supported-software.html";
+		$file = "C:/wwwroot/vali/app/engine/view/includes/supported-software.html";
 		$value = $_POST['supported-software'];
 		file_put_contents($file, $value);
 	}

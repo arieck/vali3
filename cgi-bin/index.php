@@ -39,5 +39,5 @@
   }
 ?>
 </table>
-<address>Apache Server at vali.fai-civl.org Port 80</address>
+<address>Apache Server at <?php echo $_SERVER['SERVER_NAME']; ?> Port <?php echo $_SERVER['SERVER_PORT']; ?></address>
 </body></html>
