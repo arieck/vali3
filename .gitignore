@@ -1,7 +1,8 @@
 #################
 ## WXC specials
 #################
-*.igc
+temp/*.igc
+tmp/*.igc
 
 #################
 ## Eclipse
