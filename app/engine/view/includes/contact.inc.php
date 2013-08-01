@@ -29,8 +29,16 @@ We require this so that we have a valid email address to respond to.
 <?php else : ?>
 
 <p> 
+
+The Mail function is not implemented yet.<br>
+Please use <a href="http://wxc.fai.org/support" target="_new">http://wxc.fai.org/support</a> instead.
+</p>
+
+<!--
+<p>
 Please type your message then click <b>Send</b>. A copy will be sent to you email address.
 </p>
+
 
 <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
 
@@ -54,6 +62,8 @@ Max: 1000 characters
 <?php endforeach; ?>
 
 </form>
+
+-->
 
 <?php endif; ?>
 
