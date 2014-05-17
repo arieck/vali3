@@ -720,68 +720,7 @@
 				</tbody>
 			</table>
 
-			<p><br />
-			<u><em>Some Frequently asked Questions from Developers and Pilots</em></u><br />
-			<br />
-			<strong>As a developer, how to get an official IGC Approval ?</strong><br />
-			The official FAI/IGC process is different, please check the follwing 2 FAI/IGC pages to get more information:<br />
-			<a href="http://www.fai.org/gnss-recording-devices/igc-approved-flight-recorders" target="_blank">http://www.fai.org/gnss-recording-devices/igc-approved-flight-recorders</a><br />
-			<a href="http://www.fai.org/igc-our-sport/gnss-recording-devices" target="_blank">http://www.fai.org/igc-our-sport/gnss-recording-devices</a><br />
-			<br />
-			<strong>As a developer, how to get my Software to this list ?</strong><br />
-			There are 2 different ways.<br />
-			A) in case you have the plan to build your own hardware vario/logger, an so called <em>GNSS flight recorder</em>, just please proceed with an official <a href="http://www.fai.org/gnss-recording-devices/igc-approved-flight-recorders">FAI/IGC approval</a> for your logger. When this process is done, just sent us your Win32 (PE32) command line executable, together with an sample IGC file for implementation here.<br />
-			<br />
-			B) in case you are not a Hardware manufacture to build a new GNSS flight recorder, but you have developed a nice software for Windows/McOS/Linux/Androis and so on, to simply download data from an existing Garmin or other loggers, you need to apply here for an 3-letter code first, then simple sent your software, sample IGC files and again the vali.exe.<br />
-			Choose an 3-letter code, starting with an X... and which is not in the list above.&nbsp; This unique 3letter code of your choice is assigned to each software (used within the A-Record and L-Record).<br />
-			In some situations the hardware is required as well.<br />
-			But before everybody like to have &quot;his own&quot; software be reinventing the wheel, please consider to let implement your logger into GpsDump and MaxPunkte.</p>
-
-			<p><strong>As a developer, do you approve Hardware GNSS Loggers for Paragliding, similar like IGC will do it for FAI/IGC ?</strong><br />
-			No, we do not test and approve hardware GPS loggers. We check only the &quot;vali.exe&quot; software and the software who will &quot;dump&quot; an existing GPS logger for HG/PG compliance.<br />
-			Any hardware logger approval request should go to <a href="http://www.fai.org/gnss-recording-devices/igc-approved-flight-recorders">FAI/IGC</a>, the International Gliding Commission of FAI.</p>
-
-			<p><strong><a id="HGFZTR" name="HGFZTR"></a>How to make sure that my Hardware Logger or Software is approved by any FAI Cat-1 or FAI-Cat2 competition, and used by any other Online Contest ?</strong><br />
-			This service here and the list above will not influence local competition rules of any type of National Contest. Even not for Continental or World Championships. It is always on behalf of an local organizer to allow or disallow certain Software and Hardware used by given local rules. The list above gives no guarantee for any development (Hard- or Software) that this will be used by all other Contests, or will be allowed for National Badge and Record flights.</p>
-
-			<p><strong>As a software developer, can I advertise my software using the FAI branding/logo ?</strong><br />
-			From FAI/CIVL point of view, no. You should not use any kind of FAI branding (logo) inside of your software application.<br />
-			If you want to read the official branding web styleguide check out this link: <a href="http://www.fai.org/about-fai/fai-branding">http://www.fai.org/about-fai/fai-branding</a><br />
-			In case FAI/CIVL decide to host and maintain their own software (for example like fs.fai.org), only such software might have this branding.</p>
-
-			<p><strong>As a hardware manufacturer, how can I make sure that my logger might be possibly accepted by most National Contests ?</strong><br />
-			This is easy. Just make sure your Logger can be read by GpsDump, using an existing implemented protocol, or ask the Developer from GpsDump to implement your logger.<br />
-			GpsDump and FsDump is used by FS, an Competition Scoring Software (<a href="http://fs.fai.org">fs.fai.org</a>). This Scoring Software is used by most competitions. If your logger can be dumped by GpsDump, your logger is automatically usable for any type of competition, even online contests.<br />
-			In case you do not have the plan for an FAI/IGC GNSS Logger approval, let implement your Logger into GpsDump and MaxPunkte Software is the best way to have your logger compatible for most situations, not just here.</p>
-
-			<p><strong>Can I develop another validation program, not an commandline win32 excutable ?</strong><br />
-			Lets say, I have something already in Java or using Visual Basic, Delphi Runtime and others.<br />
-			The answer is, unfortunately not possible.<br />
-			On CIVL we can only accept a PE32 commandline executable program for validation, which should not depend on any type dynamic DLL to load, and should not depend on any type of runtime (even when bundled). Also the vali binary should never display any Windows popup message to click.<br />
-			<br />
-			<strong>Why some Software is not at this list or is disabled ?</strong><br />
-			Maybe due to missing contact to the developer, or if seen that a Software is not longer used by the pilots over years or other circumstances, or it is out of scope from the developer point of view to be on this list ...</p>
-
-			<p><strong>What happen, if my IGC file is invalid due to another Software or an old encryption used ?</strong><br />
-			Any kind of not listed Software or Hardware here, which may mark IGC files on a National Server as valid, but is not known to us or not possible to implement, will cause invalid IGC flights on WXC level (and possible other connected contests).<br />
-			Such these flights will not tweaked manually on any contest to undermine the automatic validation process.</p>
-
-			<p><strong>What happen if my IGC file is invalid but I&#39;m sure using the correct software ?</strong><br />
-			Please contact the developer of the Software (or Hardware Logger) to check your IGC Track to help you.</p>
-
-			<p><strong>Do I have legal rights to force FAI or CIVL to put my business or my logger advertised here on this list ?</strong><br />
-			Unfortunately no. There are no rights, to get approval for every software, or to list your products here.<br />
-			The page here is also community driven, volunteer work only. In case we don&#39;t need it, then we may don&#39;t work for it.</p>
-
-			<p><strong>As a pilot, I have found a nice logger or a nice software. Can I request to implement it please ?</strong><br />
-			Unfortunately not. Any Software request must be submitted by the developer, not by the enduser (pilot).<br />
-			Also Hardware GNSS Logger approvals are going to IGC and not to the CIVL.<br />
-			<br />
-			<strong>Some comments on Open source</strong>.<br />
-			If you consider to generate open source project, think about the type of open source license before publishing.<br />
-			GPL might not be the best choice as it disallow your code to be included within other nice projects when they are not licensed the same way.<br />
-			There are many other valid open source licenses (for example CDDL) which allow mixed licensing, even closed source parts.<br />
-			National contests might easy able disallow your Opensource software. In result pilots flight might not scored at WXC as well.</p>
+			<p>&nbsp;</p>
 			</td>
 		</tr>
 		<tr>

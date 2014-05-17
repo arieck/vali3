@@ -25,6 +25,10 @@ $ /usr/bin/curl -s -F igcfile=@YourSample.igc vali.fai-civl.org/cgi-bin/vali-igc
 $ /usr/bin/curl -F igcfile=@YourSample.igc vali.fai-civl.org/api/vali/json<br>
 <br>
 </p>
-
+<p>
+For LeonardoXC based installations we offer wrapper which can be used<br>
+to generate the required return values for remote IGC file validation.<br>
+See more details at this <a href="http://wxc.fai.org/vali/leonardoVali.php" target="_blank">Link</a>.<br>
+</p>
 <p></p>
 
