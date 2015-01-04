@@ -48,6 +48,18 @@
 			GPL might not be the best choice as it disallow your code to be included within other nice projects when they are not licensed the same way.<br />
 			There are many other valid open source licenses (for example CDDL) which allow mixed licensing, even closed source parts.<br />
 			National contests might easy able disallow your Opensource software. In result pilots flight might not scored at WXC as well.</p>
+			<p>You may ask yourself, what happen if my key to encrypt is public available as Open Source ?<br />
+			The answer on this is easy. You as a developer, made a wrong decision.
+			GPL or CDDL doesn't mean, you have to publish your own used keys or passwords.
+			You will simply still GPL the code, but simply obfuscate the key itself on the public repository.
+			You may just write a README, how to use and compile the code, which will include
+			the step to create a new private key.</p>
+			
+			<p><strong>Developer: What about when I need to change the internal security key and algorithm ?</strong>.<br />
+			This depends on your own Software &#39;live time&#39; cycle. As long as you will support the old software with old encryption 
+			you will develop a vali exe which can validate both keys, old and new.<br />
+			As soon as your old Software is End-Of-Live, you will compile a vali exe which will further only validate latest igc files.</p>
+			
 
 			<hr>
 			
