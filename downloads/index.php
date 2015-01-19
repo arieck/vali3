@@ -1,13 +1,13 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
 <html>
  <head>
-  <title>Index of /cgi-bin</title>
+  <title>Index of /downloads</title>
   <link rel="icon" type="image/png" href="/web/images/logo16.png" />
   <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="/web/images/favicon.ico" />
   <link type="text/css" rel="stylesheet" href="/web/scripts/css/engine.css" />
  </head>
  <body>
-<h3>Index of /cgi-bin</h3>
+<h3>Index of /downloads</h3>
   <table id="multiContainer">
    <tr>
    <th valign="top"><img src="/icons/blank.gif" alt="[ICO]"></th>
@@ -21,12 +21,12 @@
    <tr><th colspan="7"><hr></th></tr>
 <?php
   if ($handle = opendir('.')) {
-    while($file=readdir($handle)){
+	while($file=readdir($handle)){
        $dat_array[] = $file;
     }
     sort($dat_array);
-    foreach($dat_array as $file) {
-	  if ($file != "." && $file != ".." && strpos($file, "exe")) {
+    foreach($dat_array as $file) {	
+	  if ($file != "." && $file != ".." && strpos($file, "igc")) {
 	    echo '<tr>';
 		echo '<td valign="top"><img src="/icons/binary.gif" alt="[binary vali exe]"></td>';
 		echo '<td><a href="'.$file.'">'.$file.'</a></td>';

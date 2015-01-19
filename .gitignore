@@ -3,6 +3,7 @@
 #################
 temp/*.igc
 tmp/*.igc
+devtest/
 
 #################
 ## Eclipse
