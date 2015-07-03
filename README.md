@@ -16,7 +16,7 @@ It is the version you will see, when you visit http://vali.fai-civl.org/
 V3 implements also a JSON response feature for validation requests, 
 and we have added a more nice public web interface for igc file validations.
 
-Q: Which version to choose if you wnat to implement your own ?
+Q: Which version to choose if you wnat to implement your own ?<br>
 A: If you want to run just a background service, lets say for LeonardoXC, then you are fine with vali2 from github.
 If you want to host the same public web interface like seen on vali.fai-civl.org seen, then you need a clone of vali3 from github,
 and modify the content to your needs.
