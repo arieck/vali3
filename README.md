@@ -10,7 +10,7 @@ Installed Apache2 + Perl + PHP on Windows 32bit or 64bit platform
 
 More Details at INSTALL.txt and at http://vali.fai-civl.org/
 
-Q: What's the difference to Open Validation Server v2 Version ?
+Q: What's the difference to Open Validation Server v2 Version ?<br>
 A: This Version here (v3) contains also an simple PHP interface (MVC implementation).
 It is the version you will see, when you visit http://vali.fai-civl.org/
 V3 implements also a JSON response feature for validation requests, 
