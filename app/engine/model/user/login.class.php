@@ -13,9 +13,10 @@ class Model_User_Login
     $Rec->email = $axAttributes['email'];
     $Rec->level = 1;
     
+	// array for allowed OpenID admin emails 
     $admins = array(
-      'johngstevenson@gmail.com',
-      '4rieck@gmail.com'
+      'user@example.com',
+      'whatever@example.com'
     );
   
     if (in_array(strtolower($Rec->email), $admins))

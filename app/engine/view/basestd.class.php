@@ -269,7 +269,7 @@ abstract class View_BaseStd extends View_BaseHtml
       else
       {
         $item['page'] = cn::PG_SIGN_IN;
-        $item['caption'] = 'sign in';
+        $item['caption'] = ''; // Sign In Menu disabled by removing content 'sign in', since Google deprecated OpenID 2.0
         $item['title'] = 'Sign In';
         $item['id'] = "{$idBase}-{$item['page']}";
         $arMenu[] = $item;        

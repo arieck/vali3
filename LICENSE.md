@@ -1,4 +1,4 @@
-###################################################################################################
+#####################################################################################
 # Opensource under CDDL 1.0 license. 
 # Do not remove or change this CDDL Header.
 #
@@ -17,4 +17,5 @@
 # Copyright John Stevenson, Andreas Rieck
 # 1st release 1.6 01-12-2008, from original DHV-OLC vali by Andreas Rieck
 # 2nd release 2.x Complete rewritten by John Stevenson 2010
-###################################################################################################
+# 3rd release 3.x PHP + PERL version initial written by John Stevenson 
+#####################################################################################

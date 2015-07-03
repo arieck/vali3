@@ -1,14 +1,25 @@
-Open Validation Server is a free online service for validating IGC files, used by the FAI CIVL World XC Online Contest and many other national and international flying contests. 
-
-IGC files are required to include a special file signature, which can be validated later by using a program provided by the instrument manufacturer or software author. This service makes use of these programs to check that IGC file data has not been altered.
-The IGC file format has been developed by members of the FAI IGC (gliding commission) in December 1994. The old draft specification is available as a PDF download here. The draft is intended to facilitate the introduction of GPS technology into IGC gliding and gliding competition verification, to create a standard for IGC-Approved Flight Recorders (GNSS).
-
-The Open Validation Server project started in 2003 for the HG/PG Onlinecontest at Segelflugszene. (www.onlinecontest.org) The main goal was, to allow the use of IGC files on onlinecontest systems without the need to buy expensive GNSS loggers at hanggliding / paragliding szene.
-
-The Open Validation Server is free to use for any onlinecontest who will find it useful but without warranty.
-
-At FAI CIVL World Online Contest level (WXC) we approve Software by testing it against minimum requirements to ensure stability for Servers and Pilot client PC software. A 3-letter code starting with X character is assigned to the software, outside from FAI GNSS logger approval process.
-
-Special thanks to John Stevenson(UK), Marcin Kostur(PL), Hans Trautenberg(DE), Christian Hynek(AT), Andreas Rieck(DE) for the great help on this project. 
-
+Open Validation Server v3 is a free online service for validating IGC files, 
+used by the FAI CIVL World XC Online Contest and many other national and international flying contests. 
 More details, and a running version at http://vali.fai-civl.org/
+
+Prerequisites, recommended Installation:
+
+Installed Apache2 + Perl + PHP on Windows 32bit or 64bit platform
+  for example using xampp on Windows 7 or Windows 2008
+  see www.apachefriends.org/en/xampp.html?
+
+More Details at INSTALL.txt and at http://vali.fai-civl.org/
+
+Q: What's the difference to Open Validation Server v2 Version ?
+A: This Version here (v3) contains also an simple PHP interface (MVC implementation).
+It is the version you will see, when you visit http://vali.fai-civl.org/
+V3 implements also a JSON response feature for validation requests, 
+and we have added a more nice public web interface for igc file validations.
+
+Q: Which version to choose if you wnat to implement your own ?
+A: If you want to run just a background service, lets say for LeonardoXC, then you are fine with vali2 from github.
+If you want to host the same public web interface like seen on vali.fai-civl.org seen, then you need a clone of vali3 from github,
+and modify the content to your needs.
+
+Open ToDo's at this v3 project:
+- Migrating from OpenID 2.0 to OpenID Connect for the Admin Login (current simply disabled).
