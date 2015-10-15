@@ -57,6 +57,8 @@
 #   ivshell.exe must exist at ModuleDir, usual /cgi-bin
 # 2.0.4 2013-05-26 arieck:
 #   bugfix: if param nohtml is not set on URL caller, assume txt return type automatically
+# 2.0.5 2015-10-15 arieck:
+#   bugfix: at function getOutput() handling uninitialized $output and $nohtml
 # 
 ###################################################################################################
 # STATUS, BUGS, ToDo's: 
@@ -510,40 +512,44 @@ sub getOutput
 {
   my ($output, $verbose, $nohtml) = @_;
 
-  if ($output eq "json")
+  if ($output)
   {
-    return OUTPUT_JSON;
-  }
+	if ($output eq "json")
+	{
+		return OUTPUT_JSON;
+	}
   
-  if ($output eq "xml")
-  {
-    return OUTPUT_XML;
-  }
+	if ($output eq "xml")
+	{
+		return OUTPUT_XML;
+	}
   
-  if ($output eq "txt")
-  {
-    return OUTPUT_TXT;
-  }
+	if ($output eq "txt")
+	{
+		return OUTPUT_TXT;
+	}
   
-  if ($output eq "html")
-  {
-    return OUTPUT_HTML;
-  }
+	if ($output eq "html")
+	{
+		return OUTPUT_HTML;
+	}
   
-  if ($output eq "debug")
+	if ($output eq "debug")
+	{
+		$debug = 1;
+		if ($input{"mode"} == MODE_CGI)
+		{
+			return OUTPUT_HTML;
+		}
+		else
+		{
+			return OUTPUT_TXT;
+		}
+	}
+  }
+  else 
   {
-    
-    $debug = 1;
-        
-    if ($input{"mode"} == MODE_CGI)
-    {
-      return OUTPUT_HTML;
-    }
-    else
-    {
-      return OUTPUT_TXT;
-    }
-    
+	$output = "xtxt"
   }
   
   if ($verbose)
@@ -552,14 +558,21 @@ sub getOutput
   }  
   else
   {
-                
-    if (lc $nohtml eq "no")
-    {
-      return OUTPUT_XHTML;
-    }
+    
+	if ($nohtml) 
+	{
+		if (lc $nohtml eq "no")
+		{
+			return OUTPUT_XHTML;
+		}
+		else 
+		{
+			return OUTPUT_XTXT;
+		}
+	}
 	else 
 	{
-	  return OUTPUT_XTXT;
+		return OUTPUT_XTXT;
 	}
     
   }
