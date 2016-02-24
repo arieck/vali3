@@ -60,7 +60,28 @@
 			you will develop a vali exe which can validate both keys, old and new.<br />
 			As soon as your old Software is End-Of-Live, you will compile a vali exe which will further only validate latest igc files.</p>
 			
-
+			<p><strong>Developer: Which Records of a IGC file needs to be part of the G-Record signature, for my Software (not an GNSS FR)?</strong>.<br />
+			You will include all Records, eg. A,H,C,B ... into the G-Record signature, but just <i>not</i> any L-Record.<br>
+			This is different to the original IGC spec for Flight Recorders.</p>
+			
+			<p><strong>Developer: What about barometric altitude vs. GPS altitude recording at the IGC file, with my Software (eg. Android / iPhone).<br>Do I need to take care of any special needs ?</strong>.<br />
+			Please be aware that only flight recording devices capable of recording both GPS and barometric altitude in the track log are allowed for scoring at a FAI cat1 event. 
+			It must not be possible to modify the barometric altitude once track log recording has started.<br>
+			If you want to have your software compatible to this as well, please make sure you meet this requirement.</p>
+			
+			<a name="HFDTE"></a>
+			<p><strong>Developer: What about latest 2015/09 changes on FAI-IGC FlightRecorder spec for the DTE record ? Which one to use now ?</strong><br>
+			new spec is:<br>
+			<strong>HFDTEDATE: DD MM YY , NN CRLF</strong> <br>
+			instead of former old IGC spec:<br>
+			<strong>HFDTE DD MM YY CRLF</strong> <br>
+			The answer is, on CIVL we keep current with old <strong>HFDTE DD MM YY CRLF</strong> <i>just for now</i>, for a period of time.<br>
+			The reason is, there are so many active implementations world wide now (Software like FS.FAI.ORG and Onlinecontest servers, even Firmware on some HG/PG loggers)
+			that such significant change (DTE replacement) will cause too many problems for developers, manufacturers, pilots and Cat1/Cat2 competition organizers, when we would <i>strict</i> implement it as a requirement today.<br>
+			If you want to develop a software, which is also compliant for the new <a href="http://www.fai.org/downloads/igc/FRTS_4" target="_blank">IGC spec</a>, we recommend to add a new non-default option within "settings" of your software, so the pilot can save a IGC file in both variants.<br>
+			Such fundamental change without backward comaptibility will take a while to implement everywhere, world wide, at any logger, any software. There is no rush to break a running system today.<br>
+			Please note, the WXC.FAI.ORG system can handle already both IGC DTE record variants, but it doesn't mean that any national contest is ready for it.<br>
+			
 			<hr>
 			
 			<p><strong><a id="HGFZTR" name="HGFZTR"></a>Hardware Manufacturer: How to make sure that my Hardware Logger or Software is approved by any FAI Cat-1 or FAI-Cat2 competition, and used by any other Online Contest ?</strong><br />
@@ -81,18 +102,12 @@
 			Maybe due to missing contact to the developer, or if seen that a Software is not longer used by the pilots over years or other circumstances, or it is out of scope from the developer point of view to be on this list ...</p>
 			
 			<a id="LK8000" name="LK8000"></a>
-			<p><strong>Pilot: Why is my LK8000 igc track invalid?</strong><br />
-			LK8000 development decided, to change the Signature. 
-			So we have today two vali-xlk.exe programs (same name) inspecting/validating two different GRecord signatures, based on same 3-Letter code XLK. 
-			One GRecord will be created by OpenSource, the other by an extra plugin, which needs to be installed on top of LK8000. 
-			This plugin installation requirement is also published <a href="http://www.lk8000.it/download/software.html" target="_blank">here</a>.<br />
-			Since only exactly one vali-xlk.exe can coexist on the server side systems, and not two or more for same software, we decided to activate
-			here the plugin based version (latest, newest version).<br />
-			Please note the statement on LK8000 <a href="http://www.lk8000.it/download/software.html" target="_blank">web</a> is wrong, saying that DHV and among many others do not require the plugin.<br />
-			There are many contests like DHVXC who connect to <b>vali.fai-civl.org</b> for <i>remote validation</i>.<br />
-			In result of that, any OpenSource LK8000 based IGC file might be invalid on your home contest, and on WXC as well.<br />
-			It is up to LK8000 development to provide a new vali-xlk.exe which is able to validate both signatures, similar some other software will do. 
-			Or make the plugin mandatory for IGC file signatures, by simply complete removing the OpenSource key from installation package, which will then not longer confuse the pilots on 2 different signature variants for same 3-Letter code.
+			<p><strong>Pilot: What about LK8000 igc tracks and the LK8000 IGC Plugin ?</strong><br />
+			LK8000 development changed the Signature to a special IGC Plugin version some years before.
+			Since technically only exactly one vali-xlk.exe file name can exist at the file system, for many years only the IGC plugin version could be validated.
+			Now the LK8000 team contact us and declared the IGC plugin version as deprecated (24-FEB-2016).
+			This actual provided vali-xlk.exe can now validate all signatures, created by LK8000 software (old and new).
+			For more details and questions see <a href="http://www.lk8000.it/download/software.html" target="_blank">LK8000 webpage</a>, or contact the LK8000 team.<br />
 			</p>
 
 			<p><strong>Pilot: What happen, if my IGC file is invalid due to another Software or an old encryption used ?</strong><br />
@@ -134,7 +149,7 @@
 			<td>&nbsp;</td>
 		</tr>
 		<tr>
-			<td>2013-08-04 07:51</td>
+			<td>updated: 2016-02-20 08:51</td>
 		</tr>
 	</tbody>
 </table>
