@@ -69,6 +69,10 @@
 			It must not be possible to modify the barometric altitude once track log recording has started.<br>
 			If you want to have your software compatible to this as well, please make sure you meet this requirement.</p>
 			
+			<p><strong>Developer: Which platform is preferred used for testing?</strong>.<br>
+			Since some online contest providers have their own validation implementation, we test everything based on Linux/Wine. Make sure
+			you use at minimum Wine 1.7.55 or later at your Linux box, as of newer crypto library requirements for some vali binaries.</p>
+
 			<a name="HFDTE"></a>
 			<p><strong>Developer: What about latest 2015/09 changes on FAI-IGC FlightRecorder spec for the DTE record ? Which one to use now ?</strong><br>
 			new spec is:<br>
@@ -81,7 +85,7 @@
 			If you want to develop a software, which is also compliant for the new <a href="http://www.fai.org/downloads/igc/FRTS_4" target="_blank">IGC spec</a>, we recommend to add a new non-default option within "settings" of your software, so the pilot can save a IGC file in both variants.<br>
 			Such fundamental change without backward comaptibility will take a while to implement everywhere, world wide, at any logger, any software. There is no rush to break a running system today.<br>
 			Please note, the WXC.FAI.ORG system can handle already both IGC DTE record variants, but it doesn't mean that any national contest is ready for it.<br>
-			
+
 			<hr>
 			
 			<p><strong><a id="HGFZTR" name="HGFZTR"></a>Hardware Manufacturer: How to make sure that my Hardware Logger or Software is approved by any FAI Cat-1 or FAI-Cat2 competition, and used by any other Online Contest ?</strong><br />
@@ -133,7 +137,7 @@
 			In most cases, a flight can only be deleted by a pilot within allowed claim time, according to National Contest rules. In these cases only the National Administrator of your &quot;Home Contest&quot; can delete a flight.<br />
 			In general a flight can only be deleted (or added, or modified) within same season.<br />
 			After season has ended, and final results are published, there will be usual no more modifications made on the results.</p>
-
+			
 			<a id="faq15923" name="faq15923"></a>
 			<p><strong>Pilot: I see now that some of my flights from previous season are not listed at WXC, what can I do ?</strong><br />
 			Unfortunately when the season and protest time is over, the issue will not be investigated for old flights. Sorry.<br />
@@ -142,14 +146,14 @@
 			In most of the times, the missing flight on WXC side is caused by the flight is <i>locked</i> on your National Contest, and not permitted to sync to WXC. 
 			This is also the reason why you need to check the issue on National Server (database) first, with your National Administrator.<br />
 			Your National Administrator can re-initate the sync any time by setting the <a href="http://www.validome.org/grammar/validate/?lang=en&viewSourceCode=1&grammarTyp=DTD&url=http://wxc.fai.org/spec/wxc-flightsync.dtd" target="_new">LastTimestamp</a> accordingly, but only for a active season.</p>
-			
+
 			</td>
 		</tr>
 		<tr>
 			<td>&nbsp;</td>
 		</tr>
 		<tr>
-			<td>updated: 2016-02-20 08:51</td>
+			<td>updated: 2016-02-24 08:51</td>
 		</tr>
 	</tbody>
 </table>
