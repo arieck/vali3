@@ -34,11 +34,13 @@
 			If you want to read the official branding web styleguide check out this link: <a href="http://www.fai.org/about-fai/fai-branding">http://www.fai.org/about-fai/fai-branding</a><br />
 			In case FAI/CIVL decide to host and maintain their own software (for example like fs.fai.org), only such software might have this branding.</p>
 
+			<a name="DLL"></a>
 			<p><strong>Developer: Can I develop another validation program, not an commandline win32 excutable ?</strong><br />
 			Lets say, I have something already in Java or using Visual Basic, Delphi Runtime and others.<br />
 			The answer is, unfortunately not possible.<br />
-			On CIVL we can only accept a PE32 commandline executable program for validation, which should not depend on any type dynamic DLL to load, and should not depend on any type of runtime (even when bundled). Also the vali binary should never display any Windows popup message to click.</p>
-
+			On CIVL we can only accept a PE32 commandline executable program for validation, which should not depend on any type of a dynamic library (DLL) to load, and should not depend on any type of external runtime. Also the vali binary should never display any Windows popup message to click. 
+			If your vali exe binary depends for example on a Visual C++ runtime library, or on openssl libraries, you need to static link them (compiler settings).</p>
+			
 			<p><strong>Developer: Do I have legal rights to force FAI or CIVL to put my business or my logger advertised here on this list ?</strong><br />
 			Unfortunately no. There are no rights, to get approval for every software, or to list your products here.<br />
 			The page here is also community driven, volunteer work only. In case we don&#39;t need it, then we may don&#39;t work for it.</p>			
