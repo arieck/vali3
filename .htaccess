@@ -1,4 +1,5 @@
 RewriteEngine on
+Options -Indexes
 
 #domain/path.../api/service/output
 # rewrites to

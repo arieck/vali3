@@ -9,6 +9,10 @@
 			Also, in terms of centralized Cat-1 or Cat-2 events, any kind of listed Software here is &quot;subject to local event rules&quot;. There exist no rights to complain against National XC Contests or Local Event Rules, based on this Software list.<br>
 			Further it is important to understand that software G-record generation is not 100% secure. Practically, the software generated G-records can dissuade casual tampering but cannot prevent a technically competent attacker.<br>
 			</p>
+			
+			<p>
+			foreword: This FAQ handles only Frequently Questions we got. These are not rules to be able to forget the IGC specifications and CIVL docs. To get a complete understanding you should know the content of latest  IGC spec for FR's (Flight recorders), and CIVL draft spec for the Validation and Flight Recorders.
+			</p>
 
 
 			<p><br>
@@ -63,8 +67,21 @@
 			As soon as your old Software is End-Of-Live, you will compile a vali exe which will further only validate latest igc files.</p>
 			
 			<p><strong>Developer: Which Records of a IGC file needs to be part of the G-Record signature, for my Software (not an GNSS FR)?</strong>.<br>
-			You will include all Records, eg. A,H,C,B ... into the G-Record signature, but just <i>not</i> any L-Record.<br>
-			This is different to the original IGC spec for Flight Recorders.</p>
+			In a nutshell, you will cover all Records, eg. A,H,C,B by the security code and the VALI check system.<br>
+			Only (according to IGC specification), L-Records can be (not must be) secured, if the data is created by same software (or FR).<br>
+			So it is up to you (as a developer) if you want to secure your own created LXXX records or not (XXX represents your own 3-letter code)<br>
+			Be aware, 3rd party L-Records are allowed to be added any time afterwards and will not cause a VALI fail.<br>
+			See (IGC FR spec A4.5)<br>
+			</p>
+
+			<p><strong>Developer: According to IGC FR spec, only H-Record data with source code F must be covered by the security code and the VALI check system.
+			I will write a software who will write HO header records, because the data like takeoff, glider, name is filled after the flight at the PC.
+			Can I do this, and I'm allowed to not secure such HO header records (see FR spec A3.2.1, A3.2.5)?</strong>.<br>
+			Our situation at WXC/CIVL is different to the original IGC spec for Flight Recorders (Hardware devices, securing data interally).<br>
+			Since on WXC and CIVL we do not require (yet) such IGC approved FR's, but a simple software to dump GPS devices, we follow a different approach.<br>
+			In a nutshell, you will cover all Records, eg. A,H,C,B by the security code and the VALI check system, regardless if the second letter 
+			"source F" or "source O" is used by your software.
+			</p>
 			
 			<p><strong>Developer: What about barometric altitude vs. GPS altitude recording at the IGC file, with my Software (eg. Android / iPhone).<br>Do I need to take care of any special needs ?</strong>.<br>
 			Please be aware that only flight recording devices capable of recording both GPS and barometric altitude in the track log are allowed for scoring at a FAI cat1 event. 
@@ -166,13 +183,23 @@
 			This is also the reason why you need to check the issue on National Server (database) first, with your National Administrator.<br>
 			Your National Administrator can re-initate the sync any time by setting the <a href="http://www.validome.org/grammar/validate/?lang=en&viewSourceCode=1&grammarTyp=DTD&url=http://wxc.fai.org/spec/wxc-flightsync.dtd" target="_new">LastTimestamp</a> accordingly, but only for a active season.</p>
 
+			
+			
+			<a id="faq15924" name="faq15924"></a>
+			<p><strong>General Question:<br>I like to know: How this validation server works? Just to be able to implement it within my own projects. Is it OpenSource?</strong><br>
+			The API of the OpenValidation Server you will find within "Web Service" menu on left side.
+			The Validation Server itself is OpenSource. You can download the source code from GitHub. There exist 2 Versions, <a href="https://github.com/arieck/vali3/">Vali3</a> and <a href="https://github.com/arieck/vali2/">Vali2</a>. Please read the differences about, at GitHub project readme. 
+			For Competition scorers (without internet access at HQ) we have also a offline Validation Tool (<a href="https://github.com/arieck/IGCcheck">IGCcheck</a>) at GitHub. You can download IGCCheck to your PC, before traveling to the competition.<br>
+			With IGCCheck you can mass- validate many IGC files from a IGC task folder, eg. when using FS Software (<a href="http://fs.fai.org">fs.fai.org</a>).<br>
+			
+			
 			</td>
 		</tr>
 		<tr>
 			<td>&nbsp;</td>
 		</tr>
 		<tr>
-			<td>updated: 2016-02-24 08:51</td>
+			<td>updated: 2017-02-23 08:51</td>
 		</tr>
 	</tbody>
 </table>
