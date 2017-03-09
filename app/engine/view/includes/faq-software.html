@@ -14,7 +14,6 @@
 			foreword: This FAQ handles only Frequently Questions we got. These are not rules to be able to forget the IGC specifications and CIVL docs. To get a complete understanding you should know the content of latest  IGC spec for FR's (Flight recorders), and CIVL draft spec for the Validation and Flight Recorders.
 			</p>
 
-
 			<p><br>
 			<u><em>Some Frequently asked Questions from Developers and Pilots</em></u><br>
 			</p>
@@ -98,12 +97,9 @@
 			<strong>HFDTEDATE: DD MM YY , NN CRLF</strong> <br>
 			instead of former old IGC spec:<br>
 			<strong>HFDTE DD MM YY CRLF</strong> <br>
-			The answer is, on CIVL we keep current with old <strong>HFDTE DD MM YY CRLF</strong> <i>just for now</i>, for a period of time.<br>
-			The reason is, there are so many active implementations world wide now (Software like FS.FAI.ORG and Onlinecontest servers, even Firmware on some HG/PG loggers)
-			that such significant change (DTE replacement) will cause too many problems for developers, manufacturers, pilots and Cat1/Cat2 competition organizers, when we would <i>strict</i> implement it as a requirement today.<br>
-			If you want to develop a software, which is also compliant for the new <a href="http://www.fai.org/downloads/igc/FRTS_4" target="_blank">IGC spec</a>, we recommend to add a new non-default option within "settings" of your software, so the pilot can save a IGC file in both variants.<br>
-			Such fundamental change without backward comaptibility will take a while to implement everywhere, world wide, at any logger, any software. There is no rush to break a running system today.<br>
-			Please note, the WXC.FAI.ORG system can handle already both IGC DTE record variants, but it doesn't mean that any national contest is ready for it.<br>
+			For the first year (after this change at the IGC specification), we recommend to stay with the old HFDTE format, and develop both within your software (as a configuration option).
+			Now since 2017, we recommend for any new implementation the new HFDTEDATE format, as we believe that the used PC software and online contests should have implemented the new date format in the meantime.
+			</p>
 			
 			<a name="LIVETRACK"></a>
 			<p><strong>Developer: I'm planing to develop a livetrack server, which signs any position data received within my internet server. Is it possible to approve such G-Record?</strong>.<br>
@@ -199,7 +195,7 @@
 			<td>&nbsp;</td>
 		</tr>
 		<tr>
-			<td>updated: 2017-02-23 08:51</td>
+			<td>updated: 2017-03-28 18:51</td>
 		</tr>
 	</tbody>
 </table>
