@@ -9,9 +9,9 @@
 			Also, in terms of centralized Cat-1 or Cat-2 events, any kind of listed Software here is &quot;subject to local event rules&quot;. There exist no rights to complain against National XC Contests or Local Event Rules, based on this Software list.<br>
 			Further it is important to understand that software G-record generation is not 100% secure. Practically, the software generated G-records can dissuade casual tampering but cannot prevent a technically competent attacker.<br>
 			</p>
-			
+
 			<p>
-			foreword: This FAQ handles only Frequently Questions we got. These are not rules to be able to forget the IGC specifications and CIVL docs. To get a complete understanding you should know the content of latest  IGC spec for FR's (Flight recorders), and CIVL draft spec for the Validation and Flight Recorders.
+			<i>foreword</i>: This FAQ handles only Frequently Questions we got. These are not rules to be able to forget the IGC specifications and CIVL docs. To get a complete understanding you should know the content of latest  IGC spec for FR's (Flight recorders), and CIVL draft spec for the Validation and Flight Recorders.
 			</p>
 
 			<p><br>
@@ -19,9 +19,8 @@
 			</p>
 			
 			<p><strong>Developer: How to get an official FAI IGC Approval ?</strong><br>
-			The official FAI/IGC process is different, please check the follwing 2 FAI/IGC pages to get more information:<br>
-			<a href="http://www.fai.org/gnss-recording-devices/igc-approved-flight-recorders" target="_blank">http://www.fai.org/gnss-recording-devices/igc-approved-flight-recorders</a><br>
-			<a href="http://www.fai.org/igc-our-sport/gnss-recording-devices" target="_blank">http://www.fai.org/igc-our-sport/gnss-recording-devices</a></p>
+			The official FAI/IGC process is different, please check the FAI/IGC documents section to get more information:<br>
+			<a href="https://www.fai.org/page/igc-documents" target="_blank">https://www.fai.org/page/igc-documents</a><br>
 			
 			<p><strong>Developer: How to get my Software to this list ?</strong><br>
 			There are 2 different ways.<br>
@@ -34,7 +33,7 @@
 
 			<p><strong>Developer: Can I advertise my software using the FAI branding/logo ?</strong><br>
 			From FAI/CIVL point of view, no. You should not use any kind of FAI branding (logo) inside of your software application.<br>
-			If you want to read the official branding web styleguide check out this link: <a href="http://www.fai.org/about-fai/fai-branding">http://www.fai.org/about-fai/fai-branding</a><br>
+			If you want to read the official branding web styleguide check out this link: <a href="https://www.fai.org/page/branding">https://www.fai.org/page/branding</a><br>
 			In case FAI/CIVL decide to host and maintain their own software (for example like fs.fai.org), only such software might have this branding.</p>
 
 			<a name="DLL"></a>
@@ -46,7 +45,11 @@
 
 			<p><strong>Developer: Do I have legal rights to force FAI or CIVL to put my business or my logger advertised here on this list ?</strong><br>
 			Unfortunately no. There are no rights, to get approval for every software, or to list your products here.<br>
-			The page here is also community driven, volunteer work only. In case we don&#39;t need it, then we may don&#39;t work for it.</p>			
+			The page here is community driven, volunteer work only. In case we don&#39;t need it, then we may not implement it.<br>
+			Also it would be very helpful to see a relevant number of pilots, who will use your product. For sure we try to prevent the 
+			situation that every pilot with some coding skills will get -his own- logger software implemented. ;-)<br>
+			We measure the usage of the software and loggers used, at the FAI WXC nightly sync.
+			</p>
 
 			<p><strong>Developer: Some comments on Open source</strong>.<br>
 			If you consider to generate open source project, think about the type of open source license before publishing.<br>
@@ -79,7 +82,7 @@
 			Our situation at WXC/CIVL is different to the original IGC spec for Flight Recorders (Hardware devices, securing data interally).<br>
 			Since on WXC and CIVL we do not require (yet) such IGC approved FR's, but a simple software to dump GPS devices, we follow a different approach.<br>
 			In a nutshell, you will cover all Records, eg. A,H,C,B by the security code and the VALI check system, regardless if the second letter 
-			"source F" or "source O" is used by your software.
+			"source F" or "source O" is used by your software. 
 			</p>
 			
 			<p><strong>Developer: What about barometric altitude vs. GPS altitude recording at the IGC file, with my Software (eg. Android / iPhone).<br>Do I need to take care of any special needs ?</strong>.<br>
@@ -126,10 +129,10 @@
 
 			<p><strong>Hardware Manufacturer: Do you approve Hardware GNSS Loggers for Paragliding, similar like IGC will do it for FAI/IGC ?</strong><br>
 			No, we do not test and approve hardware GPS loggers. We check only the &quot;vali.exe&quot; software and the software who will &quot;dump&quot; an existing GPS logger for HG/PG compliance.<br>
-			Any hardware logger approval request should go to <a href="http://www.fai.org/gnss-recording-devices/igc-approved-flight-recorders">FAI/IGC</a>, the International Gliding Commission of FAI.<br>
+			Any hardware logger approval request should go to <a href="https://www.fai.org/page/igc-documents">FAI/IGC</a>, the International Gliding Commission of FAI.<br>
 			<i>However one important note:</i><br>As Hardware Manufacturer or Developer you still need to follow the IGC  Technical Specification for GNSS flight recorders, regardless if you ask the IGC for an approval or not. 
 			If you do not apply for an official IGC FR approval, no problem. You simply need to declare and publish (on your web page) which "approval level" of IGC FR you have implemented with your hardware.<br>
-			There are three IGC-approval levels for Flight Recorders (see Annex B to the Sporting Code for Gliding (SC3B), para 4.1.1.  Briefly these are (1) All Flights (including World Records); (2) All IGC Badge and Distance Diploma Flights (excluding Records); and (3) Badge flights up to and including Diamonds. (more details see <a href="http://www.fai.org/gnss-recording-devices/igc-approved-flight-recorders">FAI/IGC</a> web)
+			There are three IGC-approval levels for Flight Recorders (see Annex B to the Sporting Code for Gliding (SC3B), para 4.1.1.  Briefly these are (1) All Flights (including World Records); (2) All IGC Badge and Distance Diploma Flights (excluding Records); and (3) Badge flights up to and including Diamonds. (more details see <a href="https://www.fai.org/page/igc-documents">FAI/IGC</a> web)
 			</p>
 			
 			<hr>
@@ -177,7 +180,7 @@
 			The flight sync to WXC is running daily.<br>
 			In most of the times, the missing flight on WXC side is caused by the flight is <i>locked</i> on your National Contest, and not permitted to sync to WXC. 
 			This is also the reason why you need to check the issue on National Server (database) first, with your National Administrator.<br>
-			Your National Administrator can re-initate the sync any time by setting the <a href="http://www.validome.org/grammar/validate/?lang=en&viewSourceCode=1&grammarTyp=DTD&url=http://wxc.fai.org/spec/wxc-flightsync.dtd" target="_new">LastTimestamp</a> accordingly, but only for a active season.</p>
+			Your National Administrator can re-initate the sync any time by setting the <a href="http://wxc.fai.org/spec/wxc-flightsync-dtd.php" target="_new">LastTimestamp</a> accordingly, but only for a active season.</p>
 
 			
 			
@@ -187,6 +190,38 @@
 			The Validation Server itself is OpenSource. You can download the source code from GitHub. There exist 2 Versions, <a href="https://github.com/arieck/vali3/">Vali3</a> and <a href="https://github.com/arieck/vali2/">Vali2</a>. Please read the differences about, at GitHub project readme. 
 			For Competition scorers (without internet access at HQ) we have also a offline Validation Tool (<a href="https://github.com/arieck/IGCcheck">IGCcheck</a>) at GitHub. You can download IGCCheck to your PC, before traveling to the competition.<br>
 			With IGCCheck you can mass- validate many IGC files from a IGC task folder, eg. when using FS Software (<a href="http://fs.fai.org">fs.fai.org</a>).<br>
+			
+			<a id="faq15925" name="faq15925"></a>
+			<p><strong>General Question:<br>When I'm testing some IGC files, I will get the error message like "XXX - not supported". Or when using the API, I will get
+			a response like "ERR_UNSUPPORTED". What does it mean ? Can I do anything to get my files validated ?</strong><br>
+			The error message means, that there exist no validation for this type of IGC file or logger you use. (even if this is a approved IGC FAI flight recorder). 
+			This happen, when the manufacturer or the developer of the software or flight recorder did not contacted us (yet) to ask for implementation here on this system. 
+			As a pilot you can probably do nothing, other then ask the Support of your logger or software, show him this web page here and recommend to him to go into contact with us.<br>
+			Once the developer or manufacturer follow the requirements for server side validation impementation (draft spec), then we can (not must) implement it. 
+			Any pilots request for implementation will be rejected. We require a continously contact with the developer side. 
+			In any case the software or flight recorder is end-of-life and the company or developer do not exist anymore, such these IGC files will be probably never (or not longer) validated here on this system.<br>
+			</p>
+			
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
 			
 			
 			</td>
