@@ -6,13 +6,13 @@
 
 <h1>Web Service</h1>
 <p>
-The Web Service is designed to use for XC Onlinecontest providers.<br>
+The available Web Service is designed to use for XC Onlinecontest providers.<br>
 <i>This is not a enduser service for the pilot.</i>
 </p>
 <p> 
-We are currently developing and testing the Web Service (JSON, HTML and TXT results).<br>
-Please <?php echo $contact;?> if you would like to be notified on updates and changes<br>
-or if you need further information.
+Please <?php echo $contact;?> if you have questions.<br>
+When implementing on your side, please don't run multiple connections in parallel<br>
+and don't run validation tests faster then 30 tests per minute.
 </p>
 <p>
 Example demonstration. When using Linux curl command in a loop<br>

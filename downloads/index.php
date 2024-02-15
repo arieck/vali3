@@ -34,7 +34,7 @@
 		echo '<td>&nbsp;</td>';
 		echo '<td align="right">'.round((filesize($file)/1024),0).'k</td>';
 		echo '<td>&nbsp;</td>';
-		echo '<td align="right"><div id="md5">'.md5($file).'</div></td>';
+		echo '<td align="right"><div id="md5">'.hash_file('md5',$file).'</div></td>';
 		echo '</tr>';
 	  }
 	}

@@ -94,7 +94,7 @@ use constant SERVER_NAME => "Open Validation Server";
 use constant SERVER_VERSION => "2.0.4";
 
 # MAX_SIZE constant - maximum file upload form data size
-use constant MAX_SIZE => 1024 * 3000;
+use constant MAX_SIZE => 1024 * 4000;
 
 
 ###################################################################################################

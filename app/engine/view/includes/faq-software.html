@@ -10,21 +10,29 @@
 			Further it is important to understand that software G-record generation is not 100% secure. Practically, the software generated G-records can dissuade casual tampering but cannot prevent a technically competent attacker.<br>
 			</p>
 
-			<p>
-			<i>foreword</i>: This FAQ handles only Frequently Questions we got. These are not rules to be able to forget the IGC specifications and CIVL docs. To get a complete understanding you should know the content of latest  IGC spec for FR's (Flight recorders), and CIVL draft spec for the Validation and Flight Recorders.
-			</p>
-
 			<p><br>
 			<u><em>Some Frequently asked Questions from Developers and Pilots</em></u><br>
 			</p>
 			
 			<p><strong>Developer: How to get an official FAI IGC Approval ?</strong><br>
 			The official FAI/IGC process is different, please check the FAI/IGC documents section to get more information:<br>
-			<a href="https://www.fai.org/page/igc-documents" target="_blank">https://www.fai.org/page/igc-documents</a><br>
+&nbsp;<br>
+IGC-approved Flight Recorders<br>
+<a href="https://www.fai.org/page/igc-approved-flight-recorders" target="_blank">https://www.fai.org/page/igc-approved-flight-recorders</a><br>
+&nbsp;<br>
+Position Recorders<br>
+<a href="https://www.fai.org/page/igc-position-recorders" target="_blank">https://www.fai.org/page/igc-position-recorders</a><br>
+&nbsp;<br>
+GNSS Recording devices<br>
+<a href="https://www.fai.org/page/igc-gnss-recording-devices" target="_blank">https://www.fai.org/page/igc-gnss-recording-devices</a><br>
+&nbsp;<br>
+more:<br>
+<a href="https://www.fai.org/search?search_phrase=IGC%20documents&page=1" target="_blank">https://www.fai.org/search?search_phrase=IGC%20documents&page=1</a><br>
+&nbsp;<br>
 			
 			<p><strong>Developer: How to get my Software to this list ?</strong><br>
 			There are 2 different ways.<br>
-			A) in case you have the plan to build your own hardware vario/logger, an so called <em>GNSS flight recorder</em>, just please proceed with an official <a href="http://www.fai.org/gnss-recording-devices/igc-approved-flight-recorders">FAI/IGC approval</a> for your logger. When this process is done, just sent us your Win32 (PE32) command line executable, together with an sample IGC file for implementation here.<br>
+			A) in case you have the plan to build your own hardware vario/logger, an so called <em>GNSS flight recorder</em>, just please proceed with an official FAI/IGC approval (links above) for your logger. When this process is done, just sent us your Win32 (PE32) command line executable, together with an sample IGC file for implementation here.<br>
 			<br>
 			B) in case you are not a Hardware manufacture to build a new GNSS flight recorder, but you have developed a nice software for Windows/McOS/Linux/Androis and so on, to simply download data from an existing Garmin or other loggers, you need to apply here for an 3-letter code first, then simple sent your software, sample IGC files and again the vali.exe.<br>
 			Choose an 3-letter code, starting with an X... and which is not in the list above.&nbsp; This unique 3letter code of your choice is assigned to each software (used within the A-Record and L-Record).<br>
@@ -33,7 +41,7 @@
 
 			<p><strong>Developer: Can I advertise my software using the FAI branding/logo ?</strong><br>
 			From FAI/CIVL point of view, no. You should not use any kind of FAI branding (logo) inside of your software application.<br>
-			If you want to read the official branding web styleguide check out this link: <a href="https://www.fai.org/page/branding">https://www.fai.org/page/branding</a><br>
+			If you want to read the official branding web styleguide check out this link: <a href="https://www.fai.org/branding">https://www.fai.org/branding</a><br>
 			In case FAI/CIVL decide to host and maintain their own software (for example like fs.fai.org), only such software might have this branding.</p>
 
 			<a name="DLL"></a>
@@ -46,6 +54,10 @@
 			<p><strong>Developer: Do I have legal rights to force FAI or CIVL to put my business or my logger advertised here on this list ?</strong><br>
 			Unfortunately no. There are no rights, to get approval for every software, or to list your products here.<br>
 			The page here is community driven, volunteer work only. In case we don&#39;t need it, then we may not implement it.<br>
+			Please be aware that you have also no rights to get an answer or implementation within a specific time.<br>
+			If it takes weeks or month, there exist a reason why a volunteer can not work for free for you.<br>
+			Any duplicating tickets for asking again and again at the same topic, will be cancelled without further notice.<br>
+			Trying going around the ticket system, for example by sending emails, will be ignored without further response.<br>
 			Also it would be very helpful to see a relevant number of pilots, who will use your product. For sure we try to prevent the 
 			situation that every pilot with some coding skills will get -his own- logger software implemented. ;-)<br>
 			We measure the usage of the software and loggers used, at the FAI WXC nightly sync.
@@ -68,6 +80,7 @@
 			you will develop a vali exe which can validate both keys, old and new.<br>
 			As soon as your old Software is End-Of-Live, you will compile a vali exe which will further only validate latest igc files.</p>
 			
+			<a name="LREC"></a>
 			<p><strong>Developer: Which Records of a IGC file needs to be part of the G-Record signature, for my Software (not an GNSS FR)?</strong>.<br>
 			In a nutshell, you will cover all Records, eg. A,H,C,B by the security code and the VALI check system.<br>
 			Only (according to IGC specification), L-Records can be (not must be) secured, if the data is created by same software (or FR).<br>
@@ -129,21 +142,12 @@
 
 			<p><strong>Hardware Manufacturer: Do you approve Hardware GNSS Loggers for Paragliding, similar like IGC will do it for FAI/IGC ?</strong><br>
 			No, we do not test and approve hardware GPS loggers. We check only the &quot;vali.exe&quot; software and the software who will &quot;dump&quot; an existing GPS logger for HG/PG compliance.<br>
-			Any hardware logger approval request should go to <a href="https://www.fai.org/page/igc-documents">FAI/IGC</a>, the International Gliding Commission of FAI.<br>
+			Any hardware logger approval request should go to FAI/IGC (see links on top of this page), the International Gliding Commission of FAI.<br>
 			<i>However one important note:</i><br>As Hardware Manufacturer or Developer you still need to follow the IGC  Technical Specification for GNSS flight recorders, regardless if you ask the IGC for an approval or not. 
 			If you do not apply for an official IGC FR approval, no problem. You simply need to declare and publish (on your web page) which "approval level" of IGC FR you have implemented with your hardware.<br>
-			There are three IGC-approval levels for Flight Recorders (see Annex B to the Sporting Code for Gliding (SC3B), para 4.1.1.  Briefly these are (1) All Flights (including World Records); (2) All IGC Badge and Distance Diploma Flights (excluding Records); and (3) Badge flights up to and including Diamonds. (more details see <a href="https://www.fai.org/page/igc-documents">FAI/IGC</a> web)
+			There are three IGC-approval levels for Flight Recorders (see Annex B to the Sporting Code for Gliding (SC3B), para 4.1.1.  Briefly these are (1) All Flights (including World Records); (2) All IGC Badge and Distance Diploma Flights (excluding Records); and (3) Badge flights up to and including Diamonds. (more details see FAI/IGC web)
 			</p>
-			<p>
-			If you like to develop a logger (hardware), you will simply "self-certify" your logger, compliant to the Draft CIVL Flight Recorder Specification.<br>
-			You can download the Draft Specification from this <a href="http://vali.fai-civl.org/documents/CIVLFlightRecorderSpecification.pdf">link</a>.<br>
-			The Manufacturer declaration of conformity document you can download from <a href="http://vali.fai-civl.org/documents/CAT1RecorderConformity.pdf">here</a>.<br>
-			Regardless if your logger is full compatible, partly compatible or not compatible at all, you will and fill declare the current status of your logger.<br>
-			You can submit your declaration form over the <a href="http://support.fai-civl.org/" target="_blank">ticket system</a>.
-			This simple self declaration requirement is valid for any logger type, for example also for logger hardware you like to publish to the market with underlying opensource software like xcsoar, lk8000 and similar.<br>
-			The reason is simple. All the Competition Organizers and NAC's (National Aeroclubs) like to know what you have implemented from technical point of view (and maybe what not). 
-			This helps any Nation and Competition Organizer to make the right decition to allow your logger for their National Championships.
-			</p>			
+
 			
 			<hr>
 			
@@ -190,7 +194,7 @@
 			The flight sync to WXC is running daily.<br>
 			In most of the times, the missing flight on WXC side is caused by the flight is <i>locked</i> on your National Contest, and not permitted to sync to WXC. 
 			This is also the reason why you need to check the issue on National Server (database) first, with your National Administrator.<br>
-			Your National Administrator can re-initate the sync any time by setting the <a href="http://wxc.fai.org/spec/wxc-flightsync-dtd.php" target="_new">LastTimestamp</a> accordingly, but only for a active season.</p>
+			Your National Administrator can re-initate the sync any time by setting the <a href="http://wxc.fai.org/spec/wxc-flightsync.dtd" target="_new">LastTimestamp</a> accordingly, but only for a active season.</p>
 
 			
 			
@@ -213,8 +217,75 @@
 			</p>
 			
 			<p>&nbsp;</p>
+			
 			<p>&nbsp;</p>
-			<p>&nbsp;</p>
+<a name="XCONTEST"></a>			
+			<p><strong>Most common Pilot XContest Question<br><br>
+			<i>My flights are visible at XContest but not seen at FAI WXC.</i></strong><br>
+<br>
+<br>
+Possible Reasons:<br>
+<br>
+<b>A)</b> You have submitted your flights at XContest International. 
+   These flights will not sent by XContest Server to WXC.  
+   A National Contest (and Administrator behind) is required. 
+   <br><u>Solution</u>: Submit your flights at a National Contest, who will sent the Flights to the WXC Server.  
+   Please contact XContest team for further details, and your National Administrator. 
+   Or Contact your National Aeroclub, if your Country do not have a National CrossCountry Contest. 
+<br>
+<br>
+<b>B)</b> You have submitted your flights at XContest International,
+   but you are a Pilot, with a Official National XC Championship.
+   These flights will not sent by XContest Server to WXC.
+   <br><u>Solution</u>: Search for your Home Contest, and contact the
+   National Administrator of your Home Country.
+<br>
+<br>
+<b>C)</b> Your Nation at XContest Server officially attend WXC sync,
+   but some (not all) flights missing at WXC. (But all of them are scored at XContest).
+   <br><u>Cause</u>: These flights (you miss) will not sent by XContest Server 
+   to WXC. These flights are marked at XContest side as "deleted",
+   so we do not receive them. (yes, even if they are still visible
+   at XContest side). 
+   This might be happen automatically due to airspace problems,
+   or a decision of your National Admin. <br>
+   Or another issue is, even if you have a "National XContest", depending on your rules 
+   these flights are not sent by XContest to WXC, because they are submitted to "<i>XContest International</i>".
+   <br><u>Solution</u>: Contact your National Administrator to get this issue
+   solved. Soon when the "international delete" flag is removed 
+   from your flight, next nightly sync should sent the flight to WXC.
+<br>
+<br>
+<b>D)</b> Your Pilot Name does not match with the Pilot Name (and Nationality)
+   from the <a href="http://civlrankings.fai.org/FL.aspx?a=306&" target="_blank">CIVL Database</a>. 
+   <br><u>Solution</u>: Make sure the CIVLID is correct at your Pilot Profile within XContest,
+   and Nationality must be correct, and the Pilot Name is exact spelled and the same  
+   within CIVL Database and XContest.
+<br>
+<br>
+<b>E)</b> You do not have a National Contest at all, but just submitted flights to XContest International.<br>
+   These flights will not sent by XContest Server to WXC.
+   <br><u>Solution</u>: Go to the WXC main page and look for another International Server
+   who will transfer international flights to WXC (Paragliding Forum, XCglobe as a example), and contact the
+   National Aeroclub of your Home Country. They should setup a Cross Country Contest (if they want), to get the contest linked to WXC.
+<br>
+<br>
+Please be aware, any flight content sync from XContest to WXC is 
+fully managed by XContest side (and your National Administrator).
+What the WXC Server will not receive (not sent by XContest) - it will not be displayed.
+<br>
+<br>
+Technically the nightly Synchronization is triggered by "last change and timestamp"
+on a flight (within the XContest Database) and can be easy re-initiated any time at XContest side.
+<br>
+<br>
+Please be aware, we do not sync flights when the season is over (for seasons in the past).
+<br>
+<br>
+For any further help, contact your National Administrator, 
+within your Home Country.<br>
+			</p>
+			
 			<p>&nbsp;</p>
 			<p>&nbsp;</p>
 			<p>&nbsp;</p>
@@ -240,7 +311,7 @@
 			<td>&nbsp;</td>
 		</tr>
 		<tr>
-			<td>updated: 2017-03-28 18:51</td>
+			<td>updated: 2019-07-15 08:51</td>
 		</tr>
 	</tbody>
 </table>

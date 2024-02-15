@@ -9,3 +9,8 @@ Disabled configuration from vali-igc.conf
 #G7ToWin A.00.180 and higher *EOL by developer 09/2016
 Module XGW vali-XGW.exe /^valid/
 
+#XGV GPSVAR 
+Module XGV vali-xgv.exe /valid/
+
+#vali-xgg support for Gaggle Android
+Module XGG vali-xgg.exe /PASSED/

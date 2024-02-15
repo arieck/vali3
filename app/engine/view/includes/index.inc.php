@@ -14,7 +14,7 @@ The IGC file format has been developed by members of the FAI IGC (gliding commis
 The old draft specification is available as a PDF download <a href="/documents/IGC-Spec_v1.00.pdf" target="_blank">here</a>.
 Please note, the old draft is (as the name would say really old.) Please use latest IGC spec and CIVL draft for your development. 
 The draft is intended to facilitate the introduction of GPS technology into IGC gliding and gliding competition verification, 
-to create a standard for <a href="https://www.fai.org/page/igc-documents" target="_blank">IGC-Approved Flight Recorders</a> (GNSS).
+to create a standard for <a href="https://www.fai.org/page/igc-approved-flight-recorders" target="_blank">IGC-Approved Flight Recorders</a> (GNSS).
 </p>
 <p>
 The <i>Open Validation Server</i> project started in 2003 for the HG/PG Onlinecontest at Segelflugszene. (www.onlinecontest.org) 
@@ -38,7 +38,7 @@ Special thanks to John Stevenson(UK), Marcin Kostur(PL), Hans Trautenberg(DE), C
 </p>
 <p>
 <ul>
-<li>latest FAI IGC Technical Specification - <a href="https://www.fai.org/page/igc-documents" target="_blanḱ">link</a></li>
+<li>latest FAI IGC Technical Specification (bottom of the target page) - <a href="https://www.fai.org/page/igc-approved-flight-recorders" target="_blanḱ">link</a></li>
 <li>CIVL IGC vali specification changes - <a href="/documents/CIVL_IGCValiSpecification_proposal.pdf" target="_blank">draft</a></li>
 </ul>
 </p>
