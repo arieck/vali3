@@ -105,15 +105,15 @@ class AppBase
 
     if ($Route->error === cn::ERR_ACCESS)
     {
-      $url = fn::getPageUrl(cn::PG_ERR_ACCESS);
+      $url = xfn::getPageUrl(cn::PG_ERR_ACCESS);
     }
     else if ($Route->error === cn::ERR_ROUTE)
     {
-      $url = fn::getPageUrl(cn::PG_ERR_MISSING);
+      $url = xfn::getPageUrl(cn::PG_ERR_MISSING);
     }
     else
     {
-      $url = fn::getPageUrl(cn::PG_ERR_SITE);
+      $url = xfn::getPageUrl(cn::PG_ERR_SITE);
     }
     
     $redirect = false;
@@ -149,11 +149,11 @@ class AppBase
       // we must log the user out
       if ($redirect)
       {
-        fn::logout($url);
+        xfn::logout($url);
       }
       else
       {
-        fn::logout();
+        xfn::logout();
       }
             
     }
