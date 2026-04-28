@@ -26,5 +26,8 @@ A: Sure you can. By the way, the general testing platform is Linux/Wine, because
 already run their own validation implementation, rather then using the OpenValidation Server.
 Make sure you use wine 1.7.55 or later as of some newer crypto libary requirements for some vali.exe binaries.
 
+<b>Q:</b> Can I create a pull request for changes here at GitHub ?<br>
+A: No. Developer of a Logger or App must create a Support Ticket over FAI-CIVL Support Ticket System.
+
 <b>Open ToDo's at this v3 project:</b><br>
 - Migrating from OpenID 2.0 to OpenID Connect for the Admin Login (current simply disabled).
