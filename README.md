@@ -2,8 +2,7 @@ Open Validation Server v3 is a free online service for validating IGC files,
 used by the FAI CIVL World XC Online Contest and many other national and international flying contests. 
 
 Prerequisites, recommended Installation:
-
-Installe Apache2 + Perl + PHP on Windows 64bit platform
+Install Apache2 + Perl + PHP on Windows 64bit platform
 
 <b>Q:</b> What's the difference to Open Validation Server v2 Version ?<br>
 A: This Version here (v3) contains also an simple PHP interface additional to Perl CGI.
